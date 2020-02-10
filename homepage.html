@@ -1,0 +1,36 @@
+<html>
+<h3>Welcome to online Grocery store</h3>
+<head>
+</head>
+<body style="background-color:powderblue;">
+<a href="http://10.1.67.156:8787/17pd/17pd30/17PD30/SEM6/Scripting%20languages%20Lab/Grocery%20store/newadmin.html">New admin</a>
+<a href="http://10.1.67.156:8787/17pd/17pd30/17PD30/SEM6/Scripting%20languages%20Lab/Grocery%20store/newuser.html">New user</a>
+<a href="http://10.1.67.156:8787/17pd/17pd30/17PD30/SEM6/Scripting%20languages%20Lab/Grocery%20store/adminlogin.html">Login as admin</a>
+<a href="http://10.1.67.156:8787/17pd/17pd30/17PD30/SEM6/Scripting%20languages%20Lab/Grocery%20store/user2.html">Login as user</a>
+<img class="mySlides" src="milk1.jpg">
+<img class="mySlides" src="fruits.jpg">
+<img class="mySlides" src="vegetables.jpg">
+<img class="mySlides" src="grocery.jpg">
+<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+</body>
+</html>
